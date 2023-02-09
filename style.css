@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: url(images/background.jpg);
+    height: 100vh;
+    width:100%;
+    bottom:0;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    overflow: hidden;
+}
+
+.down{
+    background-image: url(images/road.jpg);
+    height:200px;
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.wieza{
+    width:450px;
+    position: absolute;
+    bottom: 150px;
+    right:50px;
+}
+.plane{
+    width: 500px;
+    position: absolute;
+    bottom: 150px;
+    right: -200px;
+    animation: plan 4s linear infinite;
+    transform-origin: 100% 50%;
+}
+@keyframes plan{
+    0%{
+        transform: translateX(0) translateY(0px) rotate(0deg);
+    }
+    30%{
+        transform: translateX(-500px) translateY(0px) rotate(0deg);
+    }
+    100%{
+        transform: translateX(-1500px) translateY(-200px) rotate(20deg);
+    }
+}
